@@ -19,19 +19,17 @@ int main()
 		}
 		printf("\n");
 	}
-	printf("The mat in upper triangular form:\n");
+	
 	for(i=0;i<3;i++)
 	{
-		for(j=0;j<3;j++)
-		{
 		
-			if(j<i)
-			printf("0\t");
-			else
-			printf("%d\t",a[i][j]);
+		
+		sum+=a[c][b];
+		c--;
+		b++;
 		}
 		printf("\n");
-	}
+	
 	printf("sum of minor diagonal: %d",sum);
 	return 0;
 }
